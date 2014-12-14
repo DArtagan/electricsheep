@@ -1,6 +1,6 @@
 install:
   - sudo apt-get update -qq
-  - sudo apt-get install -qq flam3 freeglut3 freeglut3-dev glee libboost-all-dev tinyxml 
+  - sudo apt-get install -qq flam3 freeglut3 freeglut3-dev glee-dev libboost-all-dev tinyxml-dev 
 
 script:
   - cd ${pkgname}-${pkgver}
