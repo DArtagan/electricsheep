@@ -1,11 +1,11 @@
 install:
-  sudo apt-get update -qq
-  sudo apt-get install -qq flam3 freeglut3 freeglut3-dev glee libboost-all-dev tinyxml 
+  - sudo apt-get update -qq
+  - sudo apt-get install -qq flam3 freeglut3 freeglut3-dev glee libboost-all-dev tinyxml 
 
 script:
-  cd ${pkgname}-${pkgver}
-  ./autogen.sh
-  CPPFLAGS+=" -I/usr/include/lua5.1" ./configure --prefix=/usr
-  sed -i 's|-I /usr/include/libavutil||' MSVC/SettingsGUI/Makefile
-  make CXXFLAGS+="-DUSE_NEW_FFMPEG_API=1" GLEE_LIBS="-lGLee"
+  - cd ${pkgname}-${pkgver}
+  - ./autogen.sh
+  - CPPFLAGS+=" -I/usr/include/lua5.1" ./configure --prefix=/usr
+  - sed -i 's|-I /usr/include/libavutil||' MSVC/SettingsGUI/Makefile
+  - make CXXFLAGS+="-DUSE_NEW_FFMPEG_API=1" GLEE_LIBS="-lGLee"
 
