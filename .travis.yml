@@ -1,6 +1,6 @@
 install:
   - sudo apt-get update -qq
-  - sudo apt-get install -qq flam3 freeglut3 freeglut3-dev glee-dev libavcodec52 libboost-all-dev libtinyxml-dev libwxgtk3.0-dev
+  - sudo apt-get install -qq flam3 freeglut3 freeglut3-dev glee-dev libavcodec-extra-53 libboost-all-dev libtinyxml-dev libwxgtk3.0-dev
 
 script:
   - ./autogen.sh
