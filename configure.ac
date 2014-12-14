@@ -10,7 +10,7 @@ AC_CANONICAL_TARGET
 
 
 AC_CONFIG_SRCDIR([Makefile.am])
-AM_INIT_AUTOMAKE([1.9 tar-pax dist-bzip2])
+AM_INIT_AUTOMAKE([1.9 tar-pax dist-bzip2 foreign])
 
 AM_MAINTAINER_MODE
 
