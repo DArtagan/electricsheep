@@ -36,6 +36,8 @@ install:
   - hash x264 ffmpeg
 
 script:
+  - cd
+  - cd DArtagan/electricsheep
   - ./autogen.sh
   - CPPFLAGS+=" -I/usr/include/lua5.1" ./configure --prefix=/usr
   - sed -i 's|-I /usr/include/libavutil||' MSVC/SettingsGUI/Makefile
