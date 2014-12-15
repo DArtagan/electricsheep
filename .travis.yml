@@ -7,7 +7,7 @@ install:
   - cd
   - git clone --depth 1 git://git.videolan.org/x264
   - cd x264
-  - ./configure --enable-static
+  - ./configure
   - make
   - sudo checkinstall --pkgname=x264 --pkgversion="3:$(./version.sh | awk -F'[" ]' '/POINT/{print $4"+git"$5}')" --backup=no --deldoc=yes --fstrans=no --default
   - cd
