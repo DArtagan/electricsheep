@@ -33,7 +33,7 @@ install:
   - ./configure --enable-gpl --enable-libfaac --enable-libmp3lame --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-librtmp --enable-libtheora --enable-libvorbis --enable-libvpx --enable-libx264 --enable-nonfree --enable-version3 --enable-x11grab
   - make
   - sudo checkinstall --pkgname=ffmpeg --pkgversion="5:$(date +%Y%m%d%H%M)-git" --backup=no --deldoc=yes --fstrans=no --default
-  - hash x264 ffmpeg ffplay ffprobe
+  - hash x264 ffmpeg
 
 script:
   - ./autogen.sh
