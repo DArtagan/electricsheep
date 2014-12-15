@@ -21,7 +21,7 @@ install:
   - sudo checkinstall --pkgname=x264 --pkgversion="3:$(./version.sh | awk -F'[" ]' '/POINT/{print $4"+git"$5}')" --backup=no --deldoc=yes --fstrans=no --default
   - cd
   # libvpx
-  - git clone --depth 1 http://git.chromium.org/webm/libvpx.git
+  - git clone --depth 1 https://chromium.googlesource.com/webm/libvpx
   - cd libvpx
   - ./configure --disable-examples --disable-unit-tests
   - make
